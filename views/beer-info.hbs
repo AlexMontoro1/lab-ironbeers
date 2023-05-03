@@ -1,0 +1,41 @@
+<div>
+    <h3>info de cerveza en especifico</h3>
+
+    {{>beerpartial this.beer}}
+    <br>
+    First Brewed:{{this.beer.first_brewed}}
+    <br>
+    Adv:{{this.beer.abv}}
+    <br>
+    Ibu:{{this.beer.ibu}}
+    <br>
+    Target_fg:{{this.beer.target_fg}}
+    <br>
+    Target_og:{{this.beer.target_og}}
+    <br>
+    Ebc:{{this.beer.ebc}}
+    <br>
+    Srm{{this.beer.srm}}
+    <br>
+    Ph:{{this.beer.ph}}
+    <br>
+    Attenuation level:{{this.beer.attenuation_level}}
+    <br>
+    Volume:{{this.beer.volume}}
+    <br>
+    Boil volume:{{this.beer.boil_volume}}
+    <br>
+    Method:{{this.beer.method}}
+    <br>
+    Ingredients{{this.beer.ingredients}}
+    <br>
+    Food pairing:{{#each this.beer.food_pairing}}
+            <li>{{this}}</li>
+        {{/each}}
+        <br>
+    Brewer tips:{{this.beer.brewers_tips}}
+    <br>
+    Contributed by:{{this.beer.contributed_by}}
+
+
+</div>
